@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 18. You have an array
+//  A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an array. 
+// After searching, prompt the user whether the given item is 
+// found in the list or not. 
+// Note: Perform case insensitive search. Whether the user enters 
+// cookie, Cookie, COOKIE or coOkIE, program should inform 
+// about its availability. Example
+
+alert("Q18)")
+var bakery=["cake","applepie","Cookie","chips","patties"];
+var inputItems=prompt("Please enter your desird item");
+var flag=false;
+for (var k=0;k<=bakery.length;k++){
+    if (bakery[k] === inputItems) {
+       alert("item "+ inputItems +"is found in our bakery at index "+k);
+       flag=true;
+       break;
+    }
+}
+if(!flag) {
+    alert("your requested item is not found in our bakery");
+}
+
+// 19. Write a program to take two input strings. Using string 
+// comparison, tell which string is greater than other or if they 
+// both are equal
+
+
+var string1="jovin";
+var string2="marvin";
+if (string1>string2) {
+    console.log("string 1 is greater");
+}
+if (string1=== string2) {
+    console.log("both strings are equal" );
+    }
+
+
+</script>
+
+    </script>
+</body>
+</html>

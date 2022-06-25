@@ -1,0 +1,221 @@
+<!doctype html>
+<head>  </head>
+<body>
+    <!-- <h1> Javascript strings</h1>
+    <h2> Q3 ) THe indexOf () Method</h2>
+    <p>indexOf() returns the index of the element present  in the string </p>
+    <p id="indexofstring"> </p>
+    <h3> Q4 INDEX OF LAST LETTER</h3>
+    <p id="lastindexofstring"> last index of 'I'</p>
+    <h2> Q7 Replace method replaces specific word from the string </h2>
+    <p id="replacetext"> Hyderabad   </p>
+    <h3> Q8   original text -->Ali and Sami are best friends. They play cricket and football together</h3>
+    <p id="message">"Ali and Sami are best friends. They play cricket and football together "    </p> -->
+<script>   
+// // // 1. Write a program that takes two user inputs for first and last 
+// // // name using prompt and merge them in a new variable titled 
+// // // fullName. Greet the user using his full name.
+// var first=prompt("enter first name");
+// var second=prompt("enter second name");
+// var fullname;
+// fullname=first+second;
+// alert("Q1 FIRST PROGRAM");
+// alert("Welcome mr " +first +"  "+ second);
+
+// // // 2. Write a program to take a user input about his favorite mobile 
+// // // phone model. Find and display the length of user input in your 
+// // // browse
+
+// alert("Q2 Favourite mobile phone");
+// var favMobile=prompt("enter your favourite mobile phone");
+// x=favMobile.length
+// alert("the length of your favourite " +favMobile + "is" +x);
+
+// // // 3. Write a program to find the index of letter “n” in the word 
+// // // “Pakistani” and display the result in your browser
+// document.write(" <br/>Q4");
+// let text="Pakistan";
+// document.write("<br/>");
+// document.write(text + "<br/>");
+// let result = text.indexOf("n");
+// document.getElementById("indexofstring").innerHTML=result;
+
+// // // 4. Write a program to find the last index of letter “l” in the word 
+// //  // “Hello World” and display the result in your browser
+
+// let text2="Hello World";
+// let result2=text2.lastIndexOf("l");
+// document.getElementById("lastindexofstring").innerHTML=text2;
+// document.getElementById("lastindexofstring").innerHTML=result2;
+
+// // // 5. Write a program to find the character at 3rd index in the word 
+// // // “Pakistani” and display the result in your browser.
+
+// document.write("<br/>");
+// document.write("Q5");
+
+// let text3="Pakistan";
+// let answer=text3.charAt(3);
+// document.write("<br/>");
+// document.write("the third index of the word" +text3+ " is " + answer);
+
+// // // 6. Repeat Q1 using string concat() method
+
+// var first=prompt("enter first name");
+//  var second=prompt("enter second name");
+//  var fullname="syed";
+// console.log(fullname.concat(first,second));
+
+// // //7. Write a program to replace the “Hyder” to “Islam” in the word 
+// // //“Hyderabad” and display the result in your browser.
+
+// let sentence=document.getElementById("replacetext").innerHTML;
+// document.getElementById("replacetext").innerHTML=sentence.replace("Hyder","islam");
+
+// // // 8. Write a program to replace all occurrences of “and” in the 
+// // // string with “&” and display the result in your browser.
+// // // var message = “Ali and Sami are best friends. They play cricket and football together.”
+
+// let str=document.getElementById("message").innerHTML;
+// let res=str.replace(/and/g,"&");
+// // document.getElementById("message").innerHTML=str;
+// document.getElementById("message").innerHTML=res;
+
+// // //  9. Write a program that converts a string “472” to a number 472.
+// // // Display the values & types in your browser
+
+// var x="472";
+// y=typeof(x);
+// document.write("<br/> value : 472 ")
+// document.write("<br/>");
+// document.write("type : " +y);
+
+// var k=472;
+// z=typeof(k);
+// document.write("<br/> value : 472")
+// document.write("<br/>");
+// document.write("type : " +z);
+
+// // 10. Write a program that take a URL as user input in the 
+// // following format: (www.facebook.com / www.yahoo.com ). 
+// // Extract the domain name & show in your browser
+
+// alert(" Q10 Domain name");
+// var url =prompt("Enter URL of a website ");
+
+// var somechars=url.slice(4,12);
+// alert("Domain of the website is  " + somechars);
+// // // 11. Write a program that takes user input. Convert and show the 
+// // // input in capital letters.
+
+// document.write("Q11 <br/>");
+// var userinput1=prompt("please enter your choice ")
+// userinput2=userinput1.toUpperCase();
+// document.write("userinput  :" ,userinput1);
+// document.write("<br/>");
+// document.write("Uppercase  :" ,userinput2);
+
+// // 12. Write a program that takes user input. Convert and show the 
+// // input in small letters.
+
+// document.write("Q12 <br/>");
+// var sim=prompt("please enter your desired Sim to lower case");
+// var sim2=sim.toLowerCase();
+// document.write("user input :",sim);
+// document.write("<br/>")
+// document.write("Lower case   :",sim2)
+
+// // // 13. Write a program that takes user input. Convert and show the 
+// // // input in title case
+
+// // var simm=prompt("please enter sim new for title case");
+// // var sim3=simm.toTitleCase();
+
+// // // var sim3=simm.toTitleCase();
+// // // document.write("Title case   :",sim3)
+
+// // 14. Write a program that converts the variable num to string.
+// //  var num = 35.36 ;
+// // Remove the dot to display “3536” display in your browser.
+
+// document.write("<br/>");
+// document.write("Q14")
+// var number=35.36;
+// var convertedNumber=number.toString();
+// document.write("Number :" + number , "<br/>");
+// document.write(number +"is converted into " +convertedNumber*100);
+
+ 
+//  // 15. Write a program to display the value of x in your browser if a=”3” 
+// // and b=”3”
+
+// var a="3";
+// var b="3";
+
+// document.write("a is " + a);
+// document.write("<br/>");
+// document.write("b is" + b);
+// document.write("<br/>");
+// document.write("a+b is " +a +b );
+
+// // 16. Write a program to display the value of y in your browser if a=”3” 
+// // and b=”3”?
+// //  y = a - b;
+
+// var a =3;
+// var b=3;
+
+// document.write("<br/>");
+// document.write("a is " +a);
+// document.write("<br/>");
+
+// document.write("b is " +b);
+// document.write("<br/>");
+
+// document.write("a-b is ", a-b );
+
+
+// // 17. Write a program to take user input and store username in a 
+// //variable. If the username contains any special symbol among 
+// //[@ . , !], prompt the user to enter a valid username. For 
+// //character codes of [@ . , !], refer to ASCII table at the end of 
+// //this document
+
+// // Note:
+// // ASCII code of ! is 33
+// // ASCII code of , is 44
+// // ASCII code of . is 46
+// // ASCII code of @ is 64
+
+// var userInput=parseInt(prompt("please enter a string"));
+// for (loop=0;loop<=userInput.length;loop++) {
+//     if 
+// }
+
+// 18. You have an array
+//  A = [cake”, “apple pie”, “cookie”, “chips”, “patties”]
+// Write a program to enable “search by user input” in an array. 
+// After searching, prompt the user whether the given item is 
+// found in the list or not. 
+// Note: Perform case insensitive search. Whether the user enters 
+// cookie, Cookie, COOKIE or coOkIE, program should inform 
+// about its availability. Example
+
+alert("Q18)")
+var bakery=["cake","applepie","Cookie","chips","patties"];
+var inputItems=prompt("Please enter your desird item");
+flag=false;
+for (var k=0 ;k<bakery.length;k++){
+    if (inputItems===bakery[i]) {
+       alert("item " + inputitems +"is found in our bakery at index " +k);
+       flag=true;
+       break;
+    }
+}
+if(!flag) {
+    alert("your requested item is not found in our bakery");
+}
+
+</script>
+</body>
+</html>
